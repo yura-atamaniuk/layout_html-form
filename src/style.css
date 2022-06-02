@@ -1,1 +1,24 @@
 /* styles go here */
+.form-info {
+  display: block;
+  margin: 10px 20px;
+}
+
+.form-registr {
+  display: block;
+  margin: 10px 20px;
+}
+
+.form-about {
+  display: block;
+  margin: 10px 0;
+}
+
+.form-add {
+  display: block;
+  margin: 10px 20px;
+}
+
+.button {
+  margin: 10px 20px;
+}

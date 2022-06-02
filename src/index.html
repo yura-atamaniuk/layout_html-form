@@ -11,7 +11,152 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <fieldset>
+      <legend>Personal information</legend>
+      <label class="form-info">
+        Surname:
+        <input type="text"
+        name="Surname"
+        pattern="\w+"
+        autocomplete="off"
+        required
+      >
+      </label>
+
+      <label class="form-info">
+        Name:
+        <input type="text"
+        name="name"
+        pattern="\w+"
+        autocomplete="off"
+        required
+        >
+      </label>
+
+      <label class="form-info">
+        How old are you:
+        <input type="number"
+        id="tentacles"
+        name="tentacles"
+        min="1"
+        max="100"
+        value="12"
+        required
+      >
+      </label>
+
+      <label class="form-info">
+       Full date of birth:
+        <input type="date"
+        id="date"
+        name="trip-date"
+        required
+      >
+      </label>
+
+      <label class="form-info">
+        I accept the tern of agreement:
+        <input
+        type="checkbox"
+        name="terns"
+        required
+      >
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Registration</legend>
+      <label class="form-registr">
+        E-mail:
+        <input type="email"
+        name="email"
+        class="field"
+        placeholder="mail@example.com"
+        required
+      >
+      </label>
+      <label class="form-registr">
+       Password:
+        <input type="password"
+        name="password"
+        class="field"
+        minlength="5"
+        required
+      >
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>An interestig fact about you!</legend>
+      <label class="form-about">
+        Do you love cats?
+        <label>
+          <input type="radio"
+          name="chen"
+          class="y"
+          >
+          Yes
+          <input type="radio"
+            name="chen"
+            class="n"
+          >
+          No
+        </label>
+        <label class="form-about">
+        What your favorite color:
+          <input type="color"
+            id="color"
+            name="color"
+          >
+        </label>
+      </label>
+
+      <label class="form-about">
+       What time you go bed?
+        <input type="time"
+       id="appt"
+       name="appt"
+       min="9:00"
+       max="18:00"
+       required
+      >
+      </label>
+
+      <label class="form-about">
+      What are your favorite brand cars?
+
+        <select name="car" multiple>
+          <option value="bmw">Bmw</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </label>
+
+      <label class="form-about">
+       How do you rate our work?
+        <input type="range"
+          class="rate"
+          name="rate"
+          min="0"
+          max="10"
+        >
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Additional info</legend>
+      <label class="form-add">
+      Comments:
+        <textarea name="feedback"></textarea>
+      </label>
+      <label class="form-add">
+        Would you recommend us?
+        <select name="turns">
+          <option value="Yes">Yes</option>
+          <option value="NO">No</option>
+        </select>
+
+      </label>
+    </fieldset>
+    <button type="submit" class="button">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
