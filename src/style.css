@@ -1,24 +1,17 @@
 /* styles go here */
-.form-info {
-  display: block;
-  margin: 10px 20px;
+.body {
+  padding: 0;
+  margin: 0;
 }
 
-.form-registr {
-  display: block;
-  margin: 10px 20px;
+.section {
+  margin-bottom: 10px;
 }
 
-.form-about {
-  display: block;
-  margin: 10px 0;
+.section:last-child {
+  margin-bottom: 0;
 }
 
-.form-add {
-  display: block;
-  margin: 10px 20px;
-}
-
-.button {
-  margin: 10px 20px;
+.conteiner {
+  margin-bottom: 20px;
 }
